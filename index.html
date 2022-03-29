@@ -1,0 +1,1015 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/index.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+<div class="navbar" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <div class="container">
+        <div class="navbar__inner">
+            <a class="navbar__toggle" uk-navbar-toggle-icon uk-toggle href="#mobile-menu"></a>
+            <div class="navbar__logo">
+                <a href="">
+                    <img src="img/svg/logo-2.svg" alt="">
+                </a>
+            </div>
+            <div class="navbar__controls">
+                <a href="" class="navbar__icon">
+                    <span class="badge">188</span>
+                    <img class="render-img" src="img/icons/png-icons/like-icon-active.png" alt="">
+                </a>
+                <a href="" class="navbar__icon navbar__icon--grass">
+                    <span class="badge">188</span>
+                    <img class="render-img" src="img/icons/png-icons/cart-icon-grass.png" alt="">
+                </a>
+                <a href="#modal-search" uk-toggle class="navbar__icon navbar__icon--search">
+                    <img class="render-img" src="img/icons/png-icons/search-icon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mobile-menu" class="mb uk-offcanvas uk-open" uk-offcanvas>
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-offcanvas-bar-animation uk-offcanvas-slide">
+        <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close></button>
+        <div class="mb__body">
+            <div class="mb__top">
+                <ul class="mb__menu" uk-accordion>
+                    <li>
+                        <a href="" class="mb__title uk-accordion-title">Каталог товаров</a>
+                        <ul class="uk-accordion-content mb__submenu">
+                            <li><a href="" class="mb__subtitle">Item 1</a></li>
+                            <li><a href="" class="mb__subtitle">Item 2</a></li>
+                            <li><a href="" class="mb__subtitle">Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="mb__title uk-accordion-title">о нас</a>
+                        <ul class="uk-accordion-content mb__submenu">
+                            <li><a href="" class="mb__subtitle">Item 1</a></li>
+                            <li><a href="" class="mb__subtitle">Item 2</a></li>
+                            <li><a href="" class="mb__subtitle">Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="mb__title uk-accordion-title">сотрудничество</a>
+                        <ul class="uk-accordion-content mb__submenu">
+                            <li><a href="" class="mb__subtitle">Item 1</a></li>
+                            <li><a href="" class="mb__subtitle">Item 2</a></li>
+                            <li><a href="" class="mb__subtitle">Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="mb__title">акции</a></li>
+                    <li><a href="" class="mb__title">доставка и оплата</a></li>
+                    <li><a href="" class="mb__title">котакты</a></li>
+                </ul>
+            </div>
+            <div class="mb__middle">
+                <div class="mb__profile">
+                    <a href="">
+                        <img class="render-img" src="img/icons/png-icons/profile-icon-log.png" alt="">
+                        Войти в систему</a>
+                </div>
+                <div class="mb__hotline">
+                    <a href="tel:88002000950">
+                        <img class="render-img" src="img/icons/png-icons/tel-icon.png" alt="">
+                        8 800 2000 950
+                    </a>
+                </div>
+            </div>
+            <div class="mb__bottom">
+                <ul class="mb__network">
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/inst-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/vk-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/ok-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/youtube-icon.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal-search" class="search-modal uk-modal-full search" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse" uk-height-viewport>
+            <div class="search-modal__search">
+                <form class="uk-search uk-search-default search">
+                    <a href="" uk-search-icon></a>
+                    <input class="uk-search-input" type="search" placeholder="Поиск">
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<header class="header">
+    <div class="header__banner">
+        <div class="container">
+            ИНТЕРНЕТ-МАГАЗИН ОТ ПРОИЗВОДИТЕЛЯ НАТУРАЛЬНЫХ АЛТАЙСКИХ ПРОДУКТОВ
+        </div>
+    </div>
+    <div class="container">
+        <div class="header__items">
+            <div class="header__item">
+                <div class="header__inner">
+                    <div class="header__info">
+                        <a href="tel:88002000950" class="header__tel">
+                            <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/tel-icon.png" alt="">
+                            </span>
+                            <span>8 800 2000 950  <small>(по россии бесплатно)</small></span>
+                        </a>
+                        <ul class="header__list">
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/inst-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/vk-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/ok-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="language-toggle">
+                            <li class="language__item dropdown">
+                                <button class="arrow-down-icon selected" type="button">
+                                    ru
+                                </button>
+                                <ul class="language__dropdown-sub">
+                                    <li class="dropdown__sub selected" data-value="en_lang">
+                                        en
+                                    </li>
+                                    <li class="dropdown__sub selected" data-value="ru_lang">
+                                        ru
+                                    </li>
+                                </ul>
+                                <input class="dropdown__input-hidden" type="text" name="select-category" id="">
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="header__nav">
+                        <li class="header__nav-item menu-dropdown">
+                            <a href="#" class="arrow-down-icon">каталог товаров</a>
+                            <ul class="menu-dropdown__body">
+                                <li><a href="">контакты</a></li>
+                                <li><a href="">производство</a></li>
+                                <li><a href="">магазины</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item menu-dropdown">
+                            <a href="#" class="arrow-down-icon">о нас</a>
+                            <ul class="menu-dropdown__body">
+                                <li><a href="">контакты</a></li>
+                                <li><a href="">производство</a></li>
+                                <li><a href="">магазины</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item menu-dropdown">
+                            <a href="#" class="arrow-down-icon">сотрудничество</a>
+                            <ul class="menu-dropdown__body">
+                                <li><a href="">контакты</a></li>
+                                <li><a href="">производство</a></li>
+                                <li><a href="">магазины</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__item">
+                <div class="header__inner">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/svg/logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__item">
+                <div class="header__inner">
+                    <div class="header__info">
+                        <div class="header__info-text">
+                            <p>min заказ <small>от</small><span> 470 р</span></p>
+                        </div>
+                        <a href="">
+                            <span class="header__icon search">
+
+                                    <img class="render-img" src="img/icons/png-icons/search-icon.png" alt="">
+
+                            </span>
+                        </a>
+                        <ul class="header__list header-controls">
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/profile-icon-log.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <span class="badge">188</span>
+                                        <img class="render-img" src="img/icons/png-icons/like-icon-active.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon header__icon--cart-grass">
+                                        <span class="badge">8</span>
+                                        <img class="render-img" src="img/icons/png-icons/cart-icon-grass.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="header__nav">
+                        <li class="header__nav-item">
+                            <a href="#">акции</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#">доставка и оплата</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#">контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="main-banner">
+    <div class="main-slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+         uk-slideshow="animation: fade; autoplay: true">
+        <div class="main-banner__top">
+            <div class="container">
+                <div class="logo-title__items">
+                    <div class="logo-title__item">
+                        <div class="logo-title__inner">
+                            <img class="logo-title__ornament" src="img/png/oranment.png" alt="">
+                        </div>
+                    </div>
+                    <div class="logo-title__item">
+                        <div class="logo-two">
+                            <a href="">
+                                <img src="img/svg/logo-2.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="logo-title__item">
+                        <div class="logo-title__inner">
+                            <img class="logo-title__ornament" src="img/png/oranment.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="uk-slideshow-items">
+            <li class="uk-slide">
+                <div class="uk-slide__text container">
+                    <span>вдохни целебную силу гор...</span>
+                </div>
+                <img src="img/jpg/main-item-1.jpg" alt="">
+            </li>
+            <li class="uk-slide">
+                <div class="uk-slide__text container">
+                    <span>попробуй настоящее...</span>
+                </div>
+                <img src="img/jpg/main-item-2.jpg" alt="">
+            </li>
+            <li class="uk-slide">
+                <div class="uk-slide__text container">
+                    <span>почувствуй вкус сибири...</span>
+                </div>
+                <img src="img/jpg/main-item-3.jpg" alt="">
+            </li>
+        </ul>
+        <div class="main-banner__bottom">
+            <div class="container">
+                <div class="logo-title__items">
+                    <div class="logo-title__item">
+                        <div class="logo-title__inner">
+                            <img class="logo-title__ornament" src="img/png/oranment.png" alt="">
+                        </div>
+                    </div>
+                    <div class="logo-title__item">
+                        <div class="logo-two">
+                            <a href="">
+                                <img src="img/png/main-banner-icon.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="logo-title__item">
+                        <div class="logo-title__inner">
+                            <img class="logo-title__ornament" src="img/png/oranment.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<section class="about-us">
+    <div class="container">
+        <div class="section__title">
+            <div class="section__title-img"></div>
+            <h2>сделано на алтае</h2>
+            <div class="section__title-img"></div>
+        </div>
+        <div class="about-us__items">
+            <div class="about-us__item">
+                <div class="about-us__inner">
+                    <div class="about-us__group">
+                        <div class="about-us__img">
+                            <img class="render-img" src="img/png/about-Illustration-3.png" alt="">
+                        </div>
+                        <div class="about-us__group-content">
+                            <div class="about-us__group__title">10 лет на рынке</div>
+                            <p>
+                                3 современные<br>производственные<br>площадки
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-us__group">
+                        <div class="about-us__img">
+                            <img class="render-img" src="img/png/about-Illustration-2.png" alt="">
+                        </div>
+                        <div class="about-us__group-content">
+                            <div class="about-us__group__title">НАТУРАЛЬНОСТЬ</div>
+                            <p>
+                                вся наша продукция <br>исключительно<br>натуральна
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-us__group">
+                        <div class="about-us__img">
+                            <img class="render-img" src="img/png/about-Illustration-4.png" alt="">
+                        </div>
+                        <div class="about-us__group-content">
+                            <div class="about-us__group__title">СЕРТИФИКАТЫ</div>
+                            <p>
+                                производство <br>сертифицировано <br>в соответствии с ИСО
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-us__item">
+                <div class="about-us__inner">
+                    <p>
+                        Компания «Алтэя» была создана в 2011 году в городе-наукограде Бийске, крупном промышленном и
+                        научно-техническом центре Алтайского края. В основе всех продуктов компании — экстракты
+                        алтайских трав и ягоды, многие из которых не встречаются в других регионах страны. Использование
+                        современных высокотехнологичных процессов позволяет сохранить все целительные свойства природных
+                        компонентов и довести их свойства до потребителя.
+                    </p>
+                    <div class="section__title">
+                        <div class="section__title-img section__title-img--min"></div>
+                        <h2>наша миссия</h2>
+                        <div class="section__title-img section__title-img--min"></div>
+                    </div>
+                    <p>
+                        Мы с любовью и заботой сохраняем пользу и качество алтайского сырья и стремимся, чтобы
+                        создаваемые нами натуральные продукты на его основе были доступными для всех жителей России.
+                    </p>
+                    <picture>
+                        <source srcset="img/png/main-about-us-ornament-2.png" media="(min-width: 551px)">
+                        <source srcset="" media="(max-width: 550px)">
+                        <img class="about-us__ornament-bottom" src="" alt="">
+                    </picture>
+                </div>
+            </div>
+            <div class="about-us__item">
+                <div class="about-us__inner">
+                    <div class="about-us__group">
+                        <div class="about-us__img">
+                            <img class="render-img" src="img/png/about-Illustration-1.png" alt="">
+                        </div>
+                        <div class="about-us__group-content">
+                            <div class="about-us__group__title">Делаем дома</div>
+                            <p>
+                                мы производим<br>нашу продукцию там,<br>где собираем сырье
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-us__group">
+                        <div class="about-us__img">
+                            <img class="render-img" src="img/png/about-Illustration-7.png" alt="">
+                        </div>
+                        <div class="about-us__group-content">
+                            <div class="about-us__group__title">КАЧЕСТВО СЫРЬЯ</div>
+                            <p>
+                                все сырье проходит <br>контроль на качество<br>и безопасность
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-us__group">
+                        <div class="about-us__img">
+                            <img class="render-img" src="img/png/about-Illustration-6.png" alt="">
+                        </div>
+                        <div class="about-us__group-content">
+                            <div class="about-us__group__title">ДОСТАВЛЯЕМ</div>
+                            <p>
+                                доставка по России <br>БЕСПЛАТНАЯ<br>при заказе от 2500 р.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slider-news-section">
+    <div class="container">
+        <div class="news-slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+             uk-slideshow="animation: slide; velocity: 0.7">
+            <ul class="uk-slideshow-items">
+                <li class="news-slide">
+                    <div class="news-slide__inner">
+                        <div class="news-slide__item">
+                            <div class="news-slide__nav" uk-slideshow-parallax="x: 100,0,0">
+                                <a href="" class="link">Новости</a>
+                                <a href="" class="link">акции</a>
+                            </div>
+                            <div class="news-slide__title" uk-slideshow-parallax="x: 200,0,0">
+                                Соевые бобы
+                            </div>
+                            <div class="news-slide__text cropping-text" uk-slideshow-parallax="x: 400,0,0;"
+                                 style="--i:6">
+                                Соя – идеальный продукт для вегетарианца, так как на 40% она состоит из белков, по
+                                качествам не уступающих белкам животного происхождения. Соя содержит множество
+                                полезных Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet,
+                                reprehenderit!
+                            </div>
+                            <div class="link" uk-slideshow-parallax="x: 600,0,0;">СМОТРЕТЬ ПОДРОБНЕЕ</div>
+                        </div>
+                        <div class="news-slide__item news-slide__banner" uk-slideshow-parallax="x: 700,0,0">
+                            <div class="news-slide-banner new">
+                                <div class="big-ellipse">новинка!</div>
+                            </div>
+                        </div>
+                        <div class="news-slide__item">
+                            <div class="news-slide__img" uk-slideshow-parallax="x: 800,0,0">
+                                <img src="img/png/news-slide-item-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="news-slide">
+                    <div class="news-slide__inner">
+                        <div class="news-slide__item">
+                            <div class="news-slide__nav" uk-slideshow-parallax="x: 100,0,0">
+                                <a href="" class="link">Новости</a>
+                                <a href="" class="link">акции</a>
+                            </div>
+                            <div class="news-slide__title" uk-slideshow-parallax="x: 200,0,0">
+                                <span>на</span><br>Соевые бобы
+                            </div>
+                            <div class="link" uk-slideshow-parallax="x: 600,0,0;">СМОТРЕТЬ ПОДРОБНЕЕ</div>
+                        </div>
+                        <div class="news-slide__item news-slide__banner" uk-slideshow-parallax="x: 700,0,0">
+                            <div class="news-slide-banner sale">
+                                <div class="small-ellipse">c 10 по 15 ноября</div>
+                                <div class="big-ellipse">10%<br>скидка</div>
+                            </div>
+                        </div>
+                        <div class="news-slide__item">
+                            <div class="news-slide__img" uk-slideshow-parallax="x: 800,0,0">
+                                <img src="img/png/news-slide-item-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="news-slide">
+                    <div class="news-slide__inner">
+                        <div class="news-slide__item">
+                            <div class="news-slide__nav" uk-slideshow-parallax="x: 100,0,0">
+                                <a href="" class="link">Новости</a>
+                                <a href="" class="link">акции</a>
+                            </div>
+                            <div class="news-slide__title news-slide__title--small" uk-slideshow-parallax="x: 200,0,0">
+                                ПРИГЛАШАЕМ на ВЫСТАВКУ
+                            </div>
+                            <div class="news-slide__text cropping-text" style="--i:6"
+                                 uk-slideshow-parallax="x: 400,0,0;">
+                                Приглашаем вас принять участие в выставке «БАД-EXPO 2020», которая пройдет с 29 по 31
+                                октября 2020г. Место проведения: г. Москва EVENT-ХОЛЛ "ИнфоПространство"
+                            </div>
+                            <div class="link" uk-slideshow-parallax="x: 600,0,0;">СМОТРЕТЬ ПОДРОБНЕЕ</div>
+                        </div>
+                        <div class="news-slide__item news-slide__banner" uk-slideshow-parallax="x: 700,0,0">
+                            <div class="news-slide-banner event">
+                                <div class="small-ellipse">с 29 по 30 октября</div>
+                                <div class="big-ellipse">бад-expo</div>
+                            </div>
+                        </div>
+                        <div class="news-slide__item" uk-slideshow-parallax="x: 800,0,0">
+                            <div class="news-slide__img">
+                                <img src="img/png/news-slide-item-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="news-slide">
+                    <div class="news-slide__inner">
+                        <div class="news-slide__item">
+                            <div class="news-slide__nav" uk-slideshow-parallax="x: 100,0,0">
+                                <a href="" class="link">Новости</a>
+                                <a href="" class="link">акции</a>
+                            </div>
+                            <div class="news-slide__title news-slide__title--small" uk-slideshow-parallax="x: 200,0,0">
+                                ПРИГЛАШАЕМ на ВЫСТАВКУ
+                            </div>
+                            <div class="news-slide__text cropping-text" style="--i:6"
+                                 uk-slideshow-parallax="x: 400,0,0;">
+                                Приглашаем вас принять участие в выставке «БАД-EXPO 2020», которая пройдет с 29 по 31
+                                октября 2020г. Место проведения: г. Москва EVENT-ХОЛЛ "ИнфоПространство"
+                            </div>
+                            <div class="link" uk-slideshow-parallax="x: 600,0,0;">СМОТРЕТЬ ПОДРОБНЕЕ</div>
+                        </div>
+                        <div class="news-slide__item news-slide__banner" uk-slideshow-parallax="x: 700,0,0">
+                            <div class="news-slide-banner news">
+                                <div class="big-ellipse">Новости</div>
+                            </div>
+                        </div>
+                        <div class="news-slide__item" uk-slideshow-parallax="x: 800,0,0">
+                            <div class="news-slide__img">
+                                <img src="img/png/news-slide-item-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="uk-slideshow-nav news-slider-dotnav uk-dotnav uk-flex-center"></ul>
+        </div>
+    </div>
+</section>
+<section class="section section-main">
+    <div class="container">
+        <div class="section__inner">
+            <div class="section__title">
+                <div class="section__title-img"></div>
+                <h2>каталог продукции</h2>
+                <div class="section__title-img"></div>
+            </div>
+            <ul class="dop-nav-list dop-nav-list--center">
+                <li class="list-item"><a href="#" class="link">новинки</a></li>
+                <li class="list-item"><a href="#" class="link arrow-down-icon">специальные предложения</a></li>
+                <li class="list-item"><a href="#" class="link">топовые продукты</a></li>
+            </ul>
+            <div>
+                <div uk-slider>
+                    <div class="uk-position-relative">
+                        <div class="uk-slider-container product-slider uk-light">
+                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">
+                                <li>
+                                    <div class="product-card hit sale new">
+                                        <div class="product-card__status">
+                                            <button class="like"></button>
+                                        </div>
+                                        <div class="product-card__name-img">
+                                            <a href="#">
+                                            <span class="img">
+                                                <img src="img/jpg/cart-item-1.jpg" alt="">
+                                            </span>
+                                                <span class="name">
+                                             Алтайское ценное «Алтэя» Алтайское ценное «Алтэя»
+                                            </span>
+                                            </a>
+                                        </div>
+                                        <div class="price_weight">
+                                            <div class="price-box">
+                                                <div class="price-box__status">150 р</div>
+                                                <div class="price-box__price">150 р</div>
+                                            </div>
+                                            <div class="product-card__weight">Объём: 80г</div>
+                                        </div>
+                                        <button class="status_btn">
+                                            <img src="img/icons/png-icons/in-cart-icon.png" class="render-img" alt="">
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-card disabled">
+                                        <div class="product-card__status">
+                                            <button class="like"></button>
+                                        </div>
+                                        <div class="product-card__name-img">
+                                            <a href="#">
+                                            <span class="img">
+                                                <img src="img/jpg/cart-item-1.jpg" alt="">
+                                            </span>
+                                                <span class="name">
+                                             Алтайское ценное «Алтэя» Алтайское ценное «Алтэя»
+                                            </span>
+                                            </a>
+                                        </div>
+                                        <div class="price_weight">
+                                            <div class="price-box">
+                                                <div class="price-box__price">150 р</div>
+                                            </div>
+                                            <div class="product-card__weight">Объём: 80г</div>
+                                        </div>
+                                        <button class="status_btn">
+                                            нет в наличии
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-card sale in-cart">
+                                        <div class="product-card__status">
+                                            <button class="like"></button>
+                                        </div>
+                                        <div class="product-card__name-img">
+                                            <a href="#">
+                                            <span class="img">
+                                                <img src="img/jpg/cart-item-1.jpg" alt="">
+                                            </span>
+                                                <span class="name">
+                                             Алтайское ценное «Алтэя» Алтайское ценное «Алтэя»
+                                            </span>
+                                            </a>
+                                        </div>
+                                        <div class="price_weight">
+                                            <div class="price-box">
+                                                <div class="price-box__status">180 р</div>
+                                                <div class="price-box__price">1500 р</div>
+                                            </div>
+                                            <div class="product-card__weight">Объём: 80г</div>
+                                        </div>
+                                        <button class="status_btn">
+                                            перейти в корзину
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-card hit sale">
+                                        <div class="product-card__status">
+                                            <button class="like"></button>
+                                        </div>
+                                        <div class="product-card__name-img">
+                                            <a href="#">
+                                            <span class="img">
+                                                <img src="img/jpg/cart-item-1.jpg" alt="">
+                                            </span>
+                                                <span class="name">
+                                             Алтайское ценное «Алтэя» Алтайское ценное «Алтэя»
+                                            </span>
+                                            </a>
+                                        </div>
+                                        <div class="price_weight">
+                                            <div class="price-box">
+                                                <div class="price-box__status">150 р</div>
+                                                <div class="price-box__price">150 р</div>
+                                            </div>
+                                            <div class="product-card__weight">Объём: 80г</div>
+                                        </div>
+                                        <button class="status_btn">
+                                            <img src="img/icons/png-icons/in-cart-icon.png" class="render-img" alt="">
+                                        </button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-card new hit">
+                                        <div class="product-card__status">
+                                            <button class="like"></button>
+                                        </div>
+                                        <div class="product-card__name-img">
+                                            <a href="#">
+                                            <span class="img">
+                                                <img src="img/jpg/cart-item-1.jpg" alt="">
+                                            </span>
+                                                <span class="name">
+                                             Алтайское ценное «Алтэя» Алтайское ценное «Алтэя»
+                                            </span>
+                                            </a>
+                                        </div>
+                                        <div class="price_weight">
+                                            <div class="price-box">
+                                                <div class="price-box__status">150 р</div>
+                                                <div class="price-box__price">150 р</div>
+                                            </div>
+                                            <div class="product-card__weight">Объём: 80г</div>
+                                        </div>
+                                        <button class="status_btn">
+                                            <img src="img/icons/png-icons/in-cart-icon.png" class="render-img" alt="">
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="uk-arrow-block-lg">
+                            <a class="uk-position-center-left-out uk-position-small product-slider-arrow product-slider-arrow-prev"
+                               href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right-out uk-position-small product-slider-arrow product-slider-arrow-next"
+                               href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+                        <div class="uk-arrow-block-mb">
+                            <a class="uk-position-center-left product-slider-arrow product-slider-arrow-prev uk-position-small"
+                               href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right product-slider-arrow product-slider-arrow-next uk-position-small"
+                               href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section__link-block">
+                <a href="#" class="link arrow-down-icon">смотреть все товары</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-recipe">
+            <div class="section__items">
+                <div class="section__item section__item-img">
+                    <div class="section__item__inner">
+                        <div class="section__img">
+                            <img src="img/jpg/recipe-item-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="section__item section__item-content">
+                    <div class="section__item__inner">
+                        <span class="section__ornament section__ornament--hide">
+
+                        </span>
+                        <div class="section__content">
+                            <span class="date-breadcrumb">21.01.2021 / Рецепты</span>
+                            <span class="section__item__img uk-align-center uk-align-right@l">
+                                <img class="" src="img/png/recept-item-1.png">
+                            </span>
+                            <h3 class="section__item__title">пп-печенье <br>с семенами льна</h3>
+                            <ul class="uk-list-hyphen">
+                                <li>200 г цельных овсяных хлопьев</li>
+                                <li>80 г мёда</li>
+                                <li>1 яйцо</li>
+                                <li>200 г кефира</li>
+                                <li>сода</li>
+                                <li>50 г семечек льна «Алтэя»</li>
+                                <li>150 г сливочного масла</li>
+                                <li>соль</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="section__link arrow-down-icon">Смотреть полностью</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section__items">
+                <div class="section__item section__item-content">
+                    <div class="section__item__inner">
+                        <span class="section__ornament"></span>
+                        <div class="section__content">
+                            <span class="date-breadcrumb">21.01.2021 / Рецепты</span>
+                            <span class="section__item__img uk-align-center uk-align-right@l">
+                                <img class="" src="img/png/recept-item-2.png">
+                            </span>
+                            <h3 class="section__item__title">каша кедровая <br>с клубникой</h3>
+                            <ul class="uk-list-hyphen">
+                                <li>200 г цельных овсяных хлопьев</li>
+                                <li>80 г мёда</li>
+                                <li>1 яйцо</li>
+                                <li>200 г кефира</li>
+                                <li>сода</li>
+                                <li>50 г семечек льна «Алтэя»</li>
+                                <li>150 г сливочного масла</li>
+                                <li>соль</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="section__link arrow-down-icon">Смотреть полностью</a>
+                    </div>
+                </div>
+                <div class="section__item section__item-img">
+                    <div class="section__item__inner">
+                        <div class="section__img">
+                            <img src="img/jpg/recipe-item-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section__title section__title--bottom">
+                <div class="section__title-img"></div>
+                <h2>больше рецептов</h2>
+                <div class="section__title-img"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__banner">
+        <div class="container">
+            БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА (<a href="tel:88002000950">8 800 2000 950</a>) С 4:00 ДО 8:00 И С 10:00
+            ДО 13:00 (ВРЕМЯ — МОСКОВСКОЕ)
+        </div>
+    </div>
+    <div class="footer__faq">
+        <div class="container">
+            <div class="footer__faq__items">
+                <div class="footer__faq__item">
+                    <div class="footer__faq__inner">
+                        <ul class="footer__faq-list">
+                            <li class="footer__faq-title">Каталог товаров</li>
+                            <li><a href="">натуральные масла</a></li>
+                            <li><a href="">травяные чаи</a></li>
+                            <li><a href="">продукты с пантогематогеном</a></li>
+                            <li><a href="">продукты с каменным маслом</a></li>
+                            <li><a href="">БАД</a></li>
+                            <li><a href="">каши</a></li>
+                            <li><a href="">подарочные набор</a></li>
+                            <li><a href="">косметика</a></li>
+                        </ul>
+                        <ul class="footer__faq-list">
+                            <li class="footer__faq-title">Компания</li>
+                            <li><a href="">о компании</a></li>
+                            <li><a href="">лицензии и сертификаты</a></li>
+                            <li><a href="">контрактное производство</a></li>
+                            <li><a href="">оптовикам</a></li>
+                            <li><a href="">новости</a></li>
+                            <li><a href="">контакты</a></li>
+                            <li><a href="">блог</a></li>
+                        </ul>
+                        <ul class="footer__faq-list">
+                            <li class="footer__faq-title">Магазин</li>
+                            <li><a href="">акции</a></li>
+                            <li><a href="">доставка и оплата</a></li>
+                            <li><a href="">документация</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__faq__item">
+                    <div class="footer__faq__inner">
+                        <ul class="footer__faq-bank-system">
+                            <li>
+                                <span class="footer__icon-bank">
+                                    <img class="render-img" src="img/icons/png-icons/mir-icon.png" alt="">
+                                </span>
+                            </li>
+                            <li>
+                                <span class="footer__icon-bank">
+                                    <img class="render-img" src="img/icons/png-icons/mastercard-icon.png" alt="">
+                                </span>
+                            </li>
+                            <li>
+                                <span class="footer__icon-bank">
+                                    <img class="render-img" src="img/icons/png-icons/visa-icon.png" alt="">
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="footer__faq-social">
+                            <div class="footer__faq-title">Следите за нашими новостями<br>и акциями в социальных сетях!
+                            </div>
+                            <ul class="footer__faq-social-list">
+                                <li>
+                                    <a href="">
+                                    <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/inst-icon-f.png" alt="">
+                                    </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/vk-icon-f.png" alt="">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/ok-icon-f.png" alt="">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/facebook-icon-f.png"
+                                                 alt="">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/youtube-icon-f.png" alt="">
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__bottom__items">
+                <div class="footer__bottom__item">
+                    <div class="footer__bottom__inner">
+                        <form action="" class="subscribe-form">
+                            <h2 class="subscribe-form__title">Подписка на новостную рассылку:</h2>
+                            <input type="text" placeholder="введите ваш e-mail">
+                            <button class="subscribe-form__button" type="submit">
+                                <img class="render-img" src="img/icons/png-icons/go-icon.png" alt="">
+                            </button>
+                        </form>
+                        <div class="developer"><a href="#" class="alians">Разработка сайта: АЛЬЯНС+</a></div>
+                    </div>
+                </div>
+                <div class="footer__bottom__item">
+                    <div class="footer__bottom__inner">
+                        <ul class="footer__bottom-list">
+                            <li class="footer__bottom-list-title">ООО «АЛТЭЯ»</li>
+                            <li><a href="">Адрес: 659322, Россия,<br>Алтайский край, г. Бийск,<br>Ул. Социалистическая
+                                д. 11, стр. 1</a></li>
+                        </ul>
+                        <ul class="footer__bottom-list">
+                            <li class="footer__bottom-list-title">Тел./факс</li>
+                            <li><a href="">(3854) 30-30-87</a></li>
+                            <li><a href="">(3854) 30-11-33</a></li>
+                            <li><a href="">E-mail: info@alteya.su</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="cookie-consent">
+    <div class="cookie__body">
+        <button
+                type="button"
+                class="cookie__close"
+                uk-toggle="target: .cookie-consent; animation: uk-animation-slide-left-medium"
+                uk-close>
+        </button>
+
+        <div class="cookie__content uk-margin-top">
+            <h2>
+                Согласие на использование файлов cookie
+            </h2>
+            <p>
+                Для повышения Вашего удобства этот сайт использует
+                cookie для хранения данных. Продолжая использовать
+                сайт, Вы даете своё согласие на работу с этими файлами.
+            </p>
+            <div class="uk-margin-top">
+                <button
+                        type="button"
+                        uk-toggle="target: .cookie-consent; animation: uk-animation-slide-left-medium"
+                        class="cookie__btn">Cогласен</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+<script src="js/maskedinput.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+</body>
+</html>

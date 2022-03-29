@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/index.min.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+    <title>Регистрация</title>
+</head>
+<body>
+
+<div class="navbar" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <div class="container">
+        <div class="navbar__inner">
+            <a class="navbar__toggle" uk-navbar-toggle-icon uk-toggle href="#mobile-menu"></a>
+            <div class="navbar__logo">
+                <a href="">
+                    <img src="img/svg/logo-2.svg" alt="">
+                </a>
+            </div>
+            <div class="navbar__controls">
+                <a href="" class="navbar__icon">
+                    <img class="render-img" src="img/icons/png-icons/like-icon.png" alt="">
+                </a>
+                <a href="" class="navbar__icon">
+                    <img class="render-img" src="img/icons/png-icons/cart-icon.png" alt="">
+                </a>
+                <a href="#modal-search" uk-toggle class="navbar__icon navbar__icon--search">
+                    <img class="render-img" src="img/icons/png-icons/search-icon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mobile-menu" class="mb uk-offcanvas uk-open" uk-offcanvas>
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-offcanvas-bar-animation uk-offcanvas-slide">
+        <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close></button>
+        <div class="mb__body">
+            <div class="mb__top">
+                <ul class="mb__menu" uk-accordion>
+                    <li>
+                        <a href="" class="mb__title uk-accordion-title">Каталог товаров</a>
+                        <ul class="uk-accordion-content mb__submenu">
+                            <li><a href="" class="mb__subtitle">Item 1</a></li>
+                            <li><a href="" class="mb__subtitle">Item 2</a></li>
+                            <li><a href="" class="mb__subtitle">Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="mb__title uk-accordion-title">о нас</a>
+                        <ul class="uk-accordion-content mb__submenu">
+                            <li><a href="" class="mb__subtitle">Item 1</a></li>
+                            <li><a href="" class="mb__subtitle">Item 2</a></li>
+                            <li><a href="" class="mb__subtitle">Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="mb__title uk-accordion-title">сотрудничество</a>
+                        <ul class="uk-accordion-content mb__submenu">
+                            <li><a href="" class="mb__subtitle">Item 1</a></li>
+                            <li><a href="" class="mb__subtitle">Item 2</a></li>
+                            <li><a href="" class="mb__subtitle">Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="mb__title">акции</a></li>
+                    <li><a href="" class="mb__title">доставка и оплата</a></li>
+                    <li><a href="" class="mb__title">котакты</a></li>
+                </ul>
+            </div>
+            <div class="mb__middle">
+                <div class="mb__profile">
+                    <a href="">
+                        <img class="render-img" src="img/icons/png-icons/profile-icon.png" alt="">
+                        Войти в систему</a>
+                </div>
+                <div class="mb__hotline">
+                    <a href="tel:88002000950">
+                        <img class="render-img" src="img/icons/png-icons/tel-icon.png" alt="">
+                        8 800 2000 950
+                    </a>
+                </div>
+            </div>
+            <div class="mb__bottom">
+                <ul class="mb__network">
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/inst-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/vk-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/ok-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/youtube-icon.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal-search" class="search-modal uk-modal-full search" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse" uk-height-viewport>
+            <div class="search-modal__search">
+                <form class="uk-search uk-search-default search">
+                    <a href="" uk-search-icon></a>
+                    <input class="uk-search-input" type="search" placeholder="Поиск">
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<header class="header">
+    <div class="header__banner">
+        <div class="container">
+            ИНТЕРНЕТ-МАГАЗИН ОТ ПРОИЗВОДИТЕЛЯ НАТУРАЛЬНЫХ АЛТАЙСКИХ ПРОДУКТОВ
+        </div>
+    </div>
+    <div class="container">
+        <div class="header__items">
+            <div class="header__item">
+                <div class="header__inner">
+                    <div class="header__info">
+                        <a href="tel:88002000950" class="header__tel">
+                            <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/tel-icon.png" alt="">
+                            </span>
+                            <span>8 800 2000 950  <small>(по россии бесплатно)</small></span>
+                        </a>
+                        <ul class="header__list">
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/inst-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/vk-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/ok-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="language-toggle">
+                            <li class="language__item dropdown">
+                                <button class="arrow-down-icon" type="button">ru</button>
+                                <ul class="language__dropdown-sub">
+                                    <li class="dropdown__sub">
+                                        <button type="button">
+                                            en
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="header__nav">
+                        <li class="header__nav-item menu-dropdown">
+                            <a href="#" class="arrow-down-icon">каталог товаров</a>
+                            <ul class="menu-dropdown__body">
+                                <li><a href="">контакты</a></li>
+                                <li><a href="">производство</a></li>
+                                <li><a href="">магазины</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item menu-dropdown">
+                            <a href="#" class="arrow-down-icon">о нас</a>
+                            <ul class="menu-dropdown__body">
+                                <li><a href="">контакты</a></li>
+                                <li><a href="">производство</a></li>
+                                <li><a href="">магазины</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item menu-dropdown">
+                            <a href="#" class="arrow-down-icon">сотрудничество</a>
+                            <ul class="menu-dropdown__body">
+                                <li><a href="">контакты</a></li>
+                                <li><a href="">производство</a></li>
+                                <li><a href="">магазины</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__item">
+                <div class="header__inner">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/svg/logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__item">
+                <div class="header__inner">
+                    <div class="header__info">
+                        <div class="header__info-text">
+                            <p>min заказ <small>от</small><span> 470 р</span></p>
+                        </div>
+                        <a href="">
+                            <span class="header__icon search">
+                                    <img class="render-img" src="img/icons/png-icons/search-icon.png" alt="">
+                            </span>
+                        </a>
+                        <ul class="header__list header-controls">
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/profile-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/like-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/cart-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="header__nav">
+                        <li class="header__nav-item">
+                            <a href="#">акции</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#">доставка и оплата</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#">контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="breadcrumbs-section">
+    <div class="container">
+        <div class="logo-title__items">
+            <div class="logo-title__item">
+                <div class="logo-title__inner">
+                    <img class="logo-title__ornament" src="img/png/oranment.png" alt="">
+                </div>
+            </div>
+            <div class="logo-title__item">
+                <div class="logo-two">
+                    <a href="">
+                        <img src="img/svg/logo-2.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="logo-title__item">
+                <div class="logo-title-section__inner">
+                    <img class="logo-title__ornament" src="img/png/oranment.png" alt="">
+                </div>
+            </div>
+        </div>
+        <ul class="breadcrumb">
+            <li><a href="">Главная</a></li>
+            <li><span>Личный кабинет</span></li>
+        </ul>
+    </div>
+</div>
+
+
+<section class="section section-personal-area">
+    <div class="container">
+        <div class="section__inner">
+            <div class="section__title">
+                <div class="section__title-img"></div>
+                <h2>Избранные товары</h2>
+                <div class="section__title-img"></div>
+            </div>
+            <div class="uk-margin-medium-top uk-text-secondary">
+                <h3>Ваш список избранных товаров пока пуст. <br> Начните собирать свою коллекцию желаний нажатием на иконку в карточке продукта.</h3>
+            </div>
+            <div class="uk-margin-top">
+                <a href="/catalog/" style="font-size:16px;">Собрать коллекцию</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer__banner">
+        <div class="container">
+            БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА (<a href="tel:88002000950">8 800 2000 950</a>) С 4:00 ДО 8:00 И С 10:00
+            ДО 13:00 (ВРЕМЯ — МОСКОВСКОЕ)
+        </div>
+    </div>
+    <div class="footer__faq">
+        <div class="container">
+            <div class="footer__faq__items">
+                <div class="footer__faq__item">
+                    <div class="footer__faq__inner">
+                        <ul class="footer__faq-list">
+                            <li class="footer__faq-title">Каталог товаров</li>
+                            <li><a href="">натуральные масла</a></li>
+                            <li><a href="">травяные чаи</a></li>
+                            <li><a href="">продукты с пантогематогеном</a></li>
+                            <li><a href="">продукты с каменным маслом</a></li>
+                            <li><a href="">БАД</a></li>
+                            <li><a href="">каши</a></li>
+                            <li><a href="">подарочные набор</a></li>
+                            <li><a href="">косметика</a></li>
+                        </ul>
+                        <ul class="footer__faq-list">
+                            <li class="footer__faq-title">Компания</li>
+                            <li><a href="">о компании</a></li>
+                            <li><a href="">лицензии и сертификаты</a></li>
+                            <li><a href="">контрактное производство</a></li>
+                            <li><a href="">оптовикам</a></li>
+                            <li><a href="">новости</a></li>
+                            <li><a href="">контакты</a></li>
+                            <li><a href="">блог</a></li>
+                        </ul>
+                        <ul class="footer__faq-list">
+                            <li class="footer__faq-title">Магазин</li>
+                            <li><a href="">акции</a></li>
+                            <li><a href="">доставка и оплата</a></li>
+                            <li><a href="">документация</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__faq__item">
+                    <div class="footer__faq__inner">
+                        <ul class="footer__faq-bank-system">
+                            <li>
+                                <span class="footer__icon-bank">
+                                    <img class="render-img" src="img/icons/png-icons/mir-icon.png" alt="">
+                                </span>
+                            </li>
+                            <li>
+                                <span class="footer__icon-bank">
+                                    <img class="render-img" src="img/icons/png-icons/mastercard-icon.png" alt="">
+                                </span>
+                            </li>
+                            <li>
+                                <span class="footer__icon-bank">
+                                    <img class="render-img" src="img/icons/png-icons/visa-icon.png" alt="">
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="footer__faq-social">
+                            <div class="footer__faq-title">Следите за нашими новостями<br>и акциями в социальных сетях!
+                            </div>
+                            <ul class="footer__faq-social-list">
+                                <li>
+                                    <a href="">
+                                    <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/inst-icon-f.png" alt="">
+                                    </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/vk-icon-f.png" alt="">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/ok-icon-f.png" alt="">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/facebook-icon-f.png"
+                                                 alt="">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/youtube-icon-f.png" alt="">
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__bottom__items">
+                <div class="footer__bottom__item">
+                    <div class="footer__bottom__inner">
+                        <form action="" class="subscribe-form">
+                            <h2 class="subscribe-form__title">Подписка на новостную рассылку:</h2>
+                            <input type="text" placeholder="введите ваш e-mail">
+                            <button class="subscribe-form__button" type="submit">
+                                <img class="render-img" src="img/icons/png-icons/go-icon.png" alt="">
+                            </button>
+                        </form>
+                        <div class="developer"><a href="#" class="alians">Разработка сайта: АЛЬЯНС+</a></div>
+                    </div>
+                </div>
+                <div class="footer__bottom__item">
+                    <div class="footer__bottom__inner">
+                        <ul class="footer__bottom-list">
+                            <li class="footer__bottom-list-title">ООО «АЛТЭЯ»</li>
+                            <li><a href="">Адрес: 659322, Россия,<br>Алтайский край, г. Бийск,<br>Ул. Социалистическая
+                                д. 11, стр. 1</a></li>
+                        </ul>
+                        <ul class="footer__bottom-list">
+                            <li class="footer__bottom-list-title">Тел./факс</li>
+                            <li><a href="">(3854) 30-30-87</a></li>
+                            <li><a href="">(3854) 30-11-33</a></li>
+                            <li><a href="">E-mail: info@alteya.su</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+<script src="js/fancybox.min.js"></script>
+<script src="js/maskedinput.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+.navbar {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  z-index: 1000;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  transition: transform 0.4s ease-in-out 0s;
+  background: var(--white);
+  padding: 3px 0;
+  align-items: center;
+  height: 60px;
+
+  .badge{
+    font-size: 10px;
+    transform: translate(30%, -50%);
+    height: 15px;
+    line-height: 16px;
+  }
+
+  &__toggle {
+    padding: 5px 5px 5px 0;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__logo {
+    filter: invert(0.75);
+    margin-left: 13px;
+
+    img {
+      height: 17px;
+    }
+  }
+  &__icon{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    &:nth-child(1){
+      right: 105px;
+    }
+    &:nth-child(2){
+      right: 55px;
+    }
+    &:nth-child(3){
+      right: 0;
+      bottom: -4px;
+    }
+    .badge{
+      transform: translate(60%, -50%);
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    &--grass{
+      height: 40px;
+      width: 35px;
+      .badge{
+        transform: translate(60%, 0);
+      }
+    }
+    &--search{
+      height: 40px;
+      width: 45px;
+      img{
+        object-fit: cover;
+      }
+    }
+  }
+}
+.uk-offcanvas{
+  right: 0 !important;
+  z-index: 9999999;
+}
+.uk-offcanvas-flip .uk-open>.uk-offcanvas-bar{
+  right: 0 !important;
+}
+.uk-offcanvas-flip .uk-offcanvas-bar{
+  right: -100vw;
+}
+.uk-offcanvas-bar {
+  width: 100%;
+}
+.uk-offcanvas-flip .uk-offcanvas{
+  left: 0 !important;
+}
+.mb {
+  .uk-close {
+    color: var(--black);
+  }
+  &.uk-open {
+    & > .uk-offcanvas-bar {
+      left: 0 !important;
+    }
+  }
+  .uk-offcanvas-bar {
+    padding: 60px 0 0 0;
+    left: -100vw;
+  }
+
+
+  &__body {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__menu {
+    li + li {
+      margin-top: -1px !important;
+    }
+  }
+
+  &__submenu {
+    margin-top: 0 !important;
+  }
+
+  &__title {
+    padding: 20px 20px;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  &__subtitle {
+    padding: 15px 20px 15px 30px;
+  }
+
+  &__title,
+  &__subtitle {
+    color: #000 !important;
+    text-transform: uppercase;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: .65px;
+    position: relative;
+  }
+  &__middle{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & > div{
+      padding: 20px;
+    }
+    a{
+      display: flex;
+      align-items: center;
+      color: #000 !important;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: .65px;
+    }
+    img{
+      margin-right: 15px;
+      height: 30px;
+    }
+  }
+  &__bottom {
+    border-top: 1px solid #e8e8e8;
+    margin-top: auto;
+    padding: 20px;
+  }
+
+  &__network {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+      height: 30px;
+    }
+  }
+}
+
+.uk-accordion-title::before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23666%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23666%22%20width%3D%221%22%20height%3D%2213%22%20x%3D%226%22%20y%3D%220%22%20%2F%3E%0A%3C%2Fsvg%3E") !important;
+}
+
+.uk-open > .uk-accordion-title::before {
+  background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23666%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E) !important;
+}

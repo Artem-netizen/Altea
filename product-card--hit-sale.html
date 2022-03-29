@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/index.min.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="navbar" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <div class="container">
+        <div class="navbar__inner">
+            <a class="navbar__toggle" uk-navbar-toggle-icon uk-toggle href="#mobile-menu"></a>
+            <div class="navbar__logo">
+                <a href="">
+                    <img src="img/svg/logo-2.svg" alt="">
+                </a>
+            </div>
+            <div class="navbar__controls">
+                <a href="" class="navbar__icon">
+                    <img class="render-img" src="img/icons/png-icons/like-icon.png" alt="">
+                </a>
+                <a href="" class="navbar__icon">
+                    <img class="render-img" src="img/icons/png-icons/cart-icon.png" alt="">
+                </a>
+                <a href="#modal-search" uk-toggle class="navbar__icon navbar__icon--search">
+                    <img class="render-img" src="img/icons/png-icons/search-icon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mobile-menu" class="mb uk-offcanvas uk-open" uk-offcanvas>
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-offcanvas-bar-animation uk-offcanvas-slide">
+        <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close></button>
+        <div class="mb__body">
+            <div class="mb__top">
+                <ul class="mb__menu" uk-accordion>
+                    <li>
+                        <a href="" class="mb__title uk-accordion-title">Каталог товаров</a>
+                        <ul class="uk-accordion-content mb__submenu">
+                            <li><a href="" class="mb__subtitle">Item 1</a></li>
+                            <li><a href="" class="mb__subtitle">Item 2</a></li>
+                            <li><a href="" class="mb__subtitle">Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="mb__title uk-accordion-title">о нас</a>
+                        <ul class="uk-accordion-content mb__submenu">
+                            <li><a href="" class="mb__subtitle">Item 1</a></li>
+                            <li><a href="" class="mb__subtitle">Item 2</a></li>
+                            <li><a href="" class="mb__subtitle">Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="mb__title uk-accordion-title">сотрудничество</a>
+                        <ul class="uk-accordion-content mb__submenu">
+                            <li><a href="" class="mb__subtitle">Item 1</a></li>
+                            <li><a href="" class="mb__subtitle">Item 2</a></li>
+                            <li><a href="" class="mb__subtitle">Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="mb__title">акции</a></li>
+                    <li><a href="" class="mb__title">доставка и оплата</a></li>
+                    <li><a href="" class="mb__title">котакты</a></li>
+                </ul>
+            </div>
+            <div class="mb__middle">
+                <div class="mb__profile">
+                    <a href="">
+                        <img class="render-img" src="img/icons/png-icons/profile-icon.png" alt="">
+                        Войти в систему</a>
+                </div>
+                <div class="mb__hotline">
+                    <a href="tel:88002000950">
+                        <img class="render-img" src="img/icons/png-icons/tel-icon.png" alt="">
+                        8 800 2000 950
+                    </a>
+                </div>
+            </div>
+            <div class="mb__bottom">
+                <ul class="mb__network">
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/inst-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/vk-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/ok-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="render-img" src="img/icons/png-icons/youtube-icon.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal-search" class="search-modal uk-modal-full search" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse" uk-height-viewport>
+            <div class="search-modal__search">
+                <form class="uk-search uk-search-default search">
+                    <a href="" uk-search-icon></a>
+                    <input class="uk-search-input" type="search" placeholder="Поиск">
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<header class="header">
+    <div class="header__banner">
+        <div class="container">
+            ИНТЕРНЕТ-МАГАЗИН ОТ ПРОИЗВОДИТЕЛЯ НАТУРАЛЬНЫХ АЛТАЙСКИХ ПРОДУКТОВ
+        </div>
+    </div>
+    <div class="container">
+        <div class="header__items">
+            <div class="header__item">
+                <div class="header__inner">
+                    <div class="header__info">
+                        <a href="tel:88002000950" class="header__tel">
+                            <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/tel-icon.png" alt="">
+                            </span>
+                            <span>8 800 2000 950  <small>(по россии бесплатно)</small></span>
+                        </a>
+                        <ul class="header__list">
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/inst-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/vk-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/ok-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="language-toggle">
+                            <li class="language__item dropdown">
+                                <button class="arrow-down-icon" type="button">ru</button>
+                                <ul class="language__dropdown-sub">
+                                    <li class="dropdown__sub">
+                                        <button type="button">
+                                            en
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="header__nav">
+                        <li class="header__nav-item menu-dropdown">
+                            <a href="#" class="arrow-down-icon">каталог товаров</a>
+                            <ul class="menu-dropdown__body">
+                                <li><a href="">контакты</a></li>
+                                <li><a href="">производство</a></li>
+                                <li><a href="">магазины</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item menu-dropdown">
+                            <a href="#" class="arrow-down-icon">о нас</a>
+                            <ul class="menu-dropdown__body">
+                                <li><a href="">контакты</a></li>
+                                <li><a href="">производство</a></li>
+                                <li><a href="">магазины</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item menu-dropdown">
+                            <a href="#" class="arrow-down-icon">сотрудничество</a>
+                            <ul class="menu-dropdown__body">
+                                <li><a href="">контакты</a></li>
+                                <li><a href="">производство</a></li>
+                                <li><a href="">магазины</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__item">
+                <div class="header__inner">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/svg/logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__item">
+                <div class="header__inner">
+                    <div class="header__info">
+                        <div class="header__info-text">
+                            <p>min заказ <small>от</small><span> 470 р</span></p>
+                        </div>
+                        <a href="">
+                            <span class="header__icon search">
+                                    <img class="render-img" src="img/icons/png-icons/search-icon.png" alt="">
+                            </span>
+                        </a>
+                        <ul class="header__list header-controls">
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/profile-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/like-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="">
+                                    <span class="header__icon">
+                                        <img class="render-img" src="img/icons/png-icons/cart-icon.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="header__nav">
+                        <li class="header__nav-item">
+                            <a href="#">акции</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#">доставка и оплата</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#">контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="breadcrumbs-section">
+    <div class="container">
+        <div class="logo-title__items">
+            <div class="logo-title__item">
+                <div class="logo-title__inner">
+                    <img class="logo-title__ornament" src="img/png/oranment.png" alt="">
+                </div>
+            </div>
+            <div class="logo-title__item">
+                <div class="logo-two">
+                    <a href="">
+                        <img src="img/svg/logo-2.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="logo-title__item">
+                <div class="logo-title-section__inner">
+                    <img class="logo-title__ornament" src="img/png/oranment.png" alt="">
+                </div>
+            </div>
+        </div>
+        <ul class="breadcrumb">
+            <li><a href="">Главная</a></li>
+            <li><span>О нас</span></li>
+        </ul>
+    </div>
+</div>
+<section class="section section-product-card">
+    <div class="container">
+        <div class="section-product-card__inner">
+
+            <!-- Классы hit, sale, new, disabled отвечают за состояние карточки
+            new - добавляет плашку "new" в карточке
+            hit - добавляет плашку "хит"
+            sale - добавляет плашку sale, так же он отображает старый прайс продукта
+            disabled - меняет цвет цены, меняет картику корзины, убрает инпут с счетчиком и добавляет кнопку "нет в наличии"
+            -->
+
+
+            <div class="section-product-card__product hit sale">
+                <div class="section-product-card__product-card">
+
+                    <div class="main-product-card">
+                        <div thumbsSlider="" class="main-product-card_tabs ">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide main-product-card_tab">
+                                    <div>
+                                        <img src="https://alteya.al-dev.ru/upload/iblock/10c/n62yairr75jl749ec40tz0h08ed0neb9.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide main-product-card_tab">
+                                    <div>
+                                        <img src="https://alteya.al-dev.ru/upload/iblock/cc5/rqbjh52rmxd26gow83yx7nq4rf28bl6t.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide main-product-card_tab">
+                                    <div>
+                                        <img src="https://alteya.al-dev.ru/upload/iblock/9b4/ewcu511to9xgeos73b9liuyoioxsmqvp.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide main-product-card_tab">
+                                    <div>
+                                        <img src="https://alteya.al-dev.ru/upload/iblock/ab7/65itsiub8nq27npk3hvfel20ydkjzs3n.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide main-product-card_tab">
+                                    <div>
+                                        <img src="https://alteya.al-dev.ru/upload/iblock/955/4guk48brr8b0szuo3y7ga8af6g7md5fi.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide main-product-card_tab">
+                                    <div>
+                                        <img src="https://alteya.al-dev.ru/upload/iblock/090/q43sxtjysrfywp4nfn42i1df33ah6kr3.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide main-product-card_tab">
+                                    <div>
+                                        <img src="https://alteya.al-dev.ru/upload/iblock/2da/yj2op8pqysii7aq9ma7d2d5byg0xpvs3.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-product-card_arrow main-product-card_arrow-next"></div>
+                            <div class="main-product-card_arrow main-product-card_arrow-prev"></div>
+                        </div>
+                        <div class="main-product-card_body">
+
+                            <div class="main-product-card_top"></div>
+                            <div class="main-product-card_middle">
+                                <div class="main-product-card_slider">
+                                    <div class="swiper-wrapper main-product-card_items">
+                                        <div class="swiper-slide main-product-card_item">
+                                            <a href="https://alteya.al-dev.ru/upload/iblock/10c/n62yairr75jl749ec40tz0h08ed0neb9.jpg" data-fancybox="product_gallery">
+                                                <img src="https://alteya.al-dev.ru/upload/iblock/10c/n62yairr75jl749ec40tz0h08ed0neb9.jpg"/>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide main-product-card_item">
+                                            <a href="https://alteya.al-dev.ru/upload/iblock/cc5/rqbjh52rmxd26gow83yx7nq4rf28bl6t.jpg" data-fancybox="product_gallery">
+                                                <img src="https://alteya.al-dev.ru/upload/iblock/cc5/rqbjh52rmxd26gow83yx7nq4rf28bl6t.jpg"/>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide main-product-card_item">
+                                            <a href="https://alteya.al-dev.ru/upload/iblock/9b4/ewcu511to9xgeos73b9liuyoioxsmqvp.jpg" data-fancybox="product_gallery">
+                                                <img src="https://alteya.al-dev.ru/upload/iblock/9b4/ewcu511to9xgeos73b9liuyoioxsmqvp.jpg"/>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide main-product-card_item">
+                                            <a href="https://alteya.al-dev.ru/upload/iblock/ab7/65itsiub8nq27npk3hvfel20ydkjzs3n.jpg" data-fancybox="product_gallery">
+                                                <img src="https://alteya.al-dev.ru/upload/iblock/ab7/65itsiub8nq27npk3hvfel20ydkjzs3n.jpg"/>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide main-product-card_item">
+                                            <a href="https://alteya.al-dev.ru/upload/iblock/955/4guk48brr8b0szuo3y7ga8af6g7md5fi.jpg" data-fancybox="product_gallery">
+                                                <img src="https://alteya.al-dev.ru/upload/iblock/955/4guk48brr8b0szuo3y7ga8af6g7md5fi.jpg"/>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide main-product-card_item">
+                                            <a href="https://alteya.al-dev.ru/upload/iblock/090/q43sxtjysrfywp4nfn42i1df33ah6kr3.jpg" data-fancybox="product_gallery">
+                                                <img src="https://alteya.al-dev.ru/upload/iblock/090/q43sxtjysrfywp4nfn42i1df33ah6kr3.jpg"/>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide main-product-card_item">
+                                            <a href="https://alteya.al-dev.ru/upload/iblock/2da/yj2op8pqysii7aq9ma7d2d5byg0xpvs3.jpg" data-fancybox="product_gallery">
+                                                <img src="https://alteya.al-dev.ru/upload/iblock/2da/yj2op8pqysii7aq9ma7d2d5byg0xpvs3.jpg"/>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-pagination main-product-card_dotnav"></div>
+                            </div>
+                            <div class="main-product-card_bottom">
+                                <button class="like"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-product-card__product-content">
+                    <div class="section-product-card__product-content__inner">
+                        <div class="section-product-card__product-content__title">
+                            Каша льняная<br>быстрого приготовления Алтэя
+                        </div>
+                        <div class="section-product-card__product-content__info cropping-text-js">
+                            <span class="spoiler-text">
+                                Каша льняная «Алтэя» - это вкусный и полезный завтрак для всей семьи. Мука льняная
+                            богата полиненасыщенными жирными кислотами (Омега-3 и Омега-6), витаминами (А, Е, В1,
+                            В2, В6), фолиевой кислотой, антиоксидантами, а также необходимыми для здоровья
+                            микроэлементами: калием, селеном, кальцием, магнием, железом, марганцем.
+                            <br><br>
+                            Благодаря высокому содержанию ценных пищевых волокон льняная мука способствует очищению
+                            организма от шлаков и токсинов, нормализации работы желудочно-кишечного тракта
+                            </span>
+                            <button type="button" class="btn arrow-down-icon" data-is-open='false'>развернуть описание
+                            </button>
+                        </div>
+                        <div class="section-product-card__product-content__table">
+                            <div class="price">200 Р <span class="price__old">250 р</span></div>
+                            <div class="weight">
+                                <div class="select">
+                                    <a href="#" class="arrow-down-icon select__value" data-value="1">Масса нетто: <span>80 г</span></a>
+                                    <ul class="select__content">
+                                        <li data-option="1" class="select__option active">80 г</li>
+                                        <li data-option="2" class="select__option">120 г</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-product-card__product-content__composition">
+                            Cостав: соевое масло, сорбитол, карбамид, масло рыжика, гель алоэ-вера, Sensolene,
+                            Д-пантенол, экстракты шиповника, петрушки, облепихи, солодки, каштана конского,
+                            коллоидное
+                            серебро, витамин Е, коллоидное серебро, витамин Е, серебро, витамин Е.
+
+                        </div>
+                        <div class="section-product-card__product-content__btn-controls">
+                            <!-- дефолт - без класса, добавлен - add, нет в наличии -  disabled -->
+                            <button type="button" class='btn toggle-control active'
+                                    uk-toggle="target: .toggle-control; cls: active; animation: uk-animation-scale-up;">
+                                <img src="img/icons/png-icons/in-cart-icon.png" class="render-img" alt="">
+                            </button>
+
+                            <button class="btn disabled">товара нет в наличии</button>
+
+                            <a href="" class="btn add toggle-control">перейти в корзину</a>
+
+                            <div class="number">
+                                <button type="button" class="number__btn number__btn--down"></button>
+                                <label class="number__field">
+                                    <input class="number__input" type="number" min="1" max="100" step="1" value="1">
+                                    шт
+                                </label>
+                                <button type="button" class="number__btn number__btn--up"></button>
+                            </div>
+                            <div class="cart-indicator">
+                                <img src="img/icons/png-icons/cart-icon-product-card.png" alt=""
+                                     class="toggle-control active">
+                                <img src="img/icons/png-icons/cart-icon-witch-product.png" alt=""
+                                     class="toggle-control">
+                                <img src="img/icons/png-icons/cart-icon-empty.png" alt="" class="disabled">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-product-card__dop-description">
+                <ul class="section-product-card__dop-description__subnav" uk-switcher="animation: uk-animation-fade">
+                    <li><a href="#">Способы применения</a></li>
+                    <li class="uk-active"><a href="#">описание</a></li>
+                    <li><a href="#">сертификат</a></li>
+                </ul>
+                <div class="section-product-card__dop-description-switcher uk-switcher">
+                    <div>1</div>
+                    <div class="section-product-card__dop-description__items">
+                        <div class="section-product-card__dop-description__item">
+                            <div class="section-product-card__dop-description__item__inner">
+                                <h2>ромашка</h2>
+                                <p>
+                                    Каша льняная «Алтэя» - это вкусный и по лезный завтрак
+                                    для всей семьи. Мука льн- яная богата полиненасыщенными
+                                    жирны- ми кислотами (Омега-3 и
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section-product-card__dop-description__item">
+                            <div class="section-product-card__dop-description__item__inner">
+                                <h2>ромашка</h2>
+                                <p>
+                                    Каша льняная «Алтэя» - это вкусный и по лезный завтрак
+                                    для всей семьи. Мука льн- яная богата полиненасыщенными
+                                    жирны- ми кислотами (Омега-3 и
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section-product-card__dop-description__item">
+                            <div class="section-product-card__dop-description__item__inner">
+                                <h2>ромашка</h2>
+                                <p>
+                                    Каша льняная «Алтэя» - это вкусный и по лезный завтрак
+                                    для всей семьи. Мука льн- яная богата полиненасыщенными
+                                    жирны- ми кислотами (Омега-3 и
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section-product-card__dop-description__item">
+                            <div class="section-product-card__dop-description__item__inner">
+                                <h2>ромашка</h2>
+                                <p>
+                                    Каша льняная «Алтэя» - это вкусный и по лезный завтрак
+                                    для всей семьи. Мука льн- яная богата полиненасыщенными
+                                    жирны- ми кислотами (Омега-3 и
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section-product-card__dop-description__item">
+                            <div class="section-product-card__dop-description__item__inner">
+                                <h2>ромашка</h2>
+                                <p>
+                                    Каша льняная «Алтэя» - это вкусный и по лезный завтрак
+                                    для всей семьи. Мука льн- яная богата полиненасыщенными
+                                    жирны- ми кислотами (Омега-3 и
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section-product-card__dop-description__item">
+                            <div class="section-product-card__dop-description__item__inner">
+                                <h2>ромашка</h2>
+                                <p>
+                                    Каша льняная «Алтэя» - это вкусный и по лезный завтрак
+                                    для всей семьи. Мука льн- яная богата полиненасыщенными
+                                    жирны- ми кислотами (Омега-3 и
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>3</div>
+                </div>
+            </div>
+            <div class="section-product-card__slider">
+                <div class="section__title">
+                    <div class="section__title-img"></div>
+                    <h2>вы смотрели</h2>
+                    <div class="section__title-img"></div>
+                </div>
+                <div uk-slider>
+                    <div class="uk-position-relative">
+                        <div class="uk-slider-container product-slider uk-light">
+                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">
+                                <li>
+                                    <div class="product-slider-item sale">
+                                        <div class="product-slider__inner">
+                                            <div class="product-slider__name-img">
+                                                <a href="#">
+                                        <span class="img">
+                                            <img src="img/jpg/card-slide-item-1.jpg" alt="">
+                                        </span>
+                                                    <span class="name">
+                                            мумие<br>алтайское ценное «Алтэя»
+                                        </span>
+                                                </a>
+                                            </div>
+                                            <div class="product-slider__weight">
+                                                Объём: 80г
+                                            </div>
+                                            <div class="product-slider__price">
+                                                <div class="price-box">
+                                                    <div class="price-box__status">150 р.</div>
+                                                    <div class="price-box__price">150 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-slider-item">
+                                        <div class="product-slider__inner">
+                                            <div class="product-slider__name-img">
+                                                <a href="#">
+                                        <span class="img">
+                                            <img src="img/jpg/card-slide-item-1.jpg" alt="">
+                                        </span>
+                                                    <span class="name">
+                                            мумие<br>алтайское ценное «Алтэя»
+                                        </span>
+                                                </a>
+                                            </div>
+                                            <div class="product-slider__weight">
+                                                Объём: 80г
+                                            </div>
+                                            <div class="product-slider__price">
+                                                <div class="price-box">
+                                                    <div class="price-box__status">150 р.</div>
+                                                    <div class="price-box__price">150 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-slider-item sale">
+                                        <div class="product-slider__inner">
+                                            <div class="product-slider__name-img">
+                                                <a href="#">
+                                        <span class="img">
+                                            <img src="img/jpg/card-slide-item-1.jpg" alt="">
+                                        </span>
+                                                    <span class="name">
+                                            мумие<br>алтайское ценное «Алтэя»
+                                        </span>
+                                                </a>
+                                            </div>
+                                            <div class="product-slider__weight">
+                                                Объём: 80г
+                                            </div>
+                                            <div class="product-slider__price">
+                                                <div class="price-box">
+                                                    <div class="price-box__status">150 р.</div>
+                                                    <div class="price-box__price">150 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-slider-item">
+                                        <div class="product-slider__inner">
+                                            <div class="product-slider__name-img">
+                                                <a href="#">
+                                        <span class="img">
+                                            <img src="img/jpg/card-slide-item-1.jpg" alt="">
+                                        </span>
+                                                    <span class="name">
+                                            мумие<br>алтайское ценное «Алтэя»
+                                        </span>
+                                                </a>
+                                            </div>
+                                            <div class="product-slider__weight">
+                                                Объём: 80г
+                                            </div>
+                                            <div class="product-slider__price">
+                                                <div class="price-box">
+                                                    <div class="price-box__status">150 р.</div>
+                                                    <div class="price-box__price">150 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-slider-item sale">
+                                        <div class="product-slider__inner">
+                                            <div class="product-slider__name-img">
+                                                <a href="#">
+                                        <span class="img">
+                                            <img src="img/jpg/card-slide-item-1.jpg" alt="">
+                                        </span>
+                                                    <span class="name">
+                                            мумие<br>алтайское ценное «Алтэя»
+                                        </span>
+                                                </a>
+                                            </div>
+                                            <div class="product-slider__weight">
+                                                Объём: 80г
+                                            </div>
+                                            <div class="product-slider__price">
+                                                <div class="price-box">
+                                                    <div class="price-box__status">150 р.</div>
+                                                    <div class="price-box__price">150 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-slider-item">
+                                        <div class="product-slider__inner">
+                                            <div class="product-slider__name-img">
+                                                <a href="#">
+                                        <span class="img">
+                                            <img src="img/jpg/card-slide-item-1.jpg" alt="">
+                                        </span>
+                                                    <span class="name">
+                                            мумие<br>алтайское ценное «Алтэя»
+                                        </span>
+                                                </a>
+                                            </div>
+                                            <div class="product-slider__weight">
+                                                Объём: 80г
+                                            </div>
+                                            <div class="product-slider__price">
+                                                <div class="price-box">
+                                                    <div class="price-box__status">150 р.</div>
+                                                    <div class="price-box__price">150 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="uk-arrow-block-lg">
+                            <a class="uk-position-center-left-out uk-position-small product-slider-arrow product-slider-arrow-prev" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right-out uk-position-small product-slider-arrow product-slider-arrow-next" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+                        <div class="uk-arrow-block-mb">
+                            <a class="uk-position-center-left product-slider-arrow product-slider-arrow-prev uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right product-slider-arrow product-slider-arrow-next uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-product-card__slider">
+                <div class="section__title">
+                    <div class="section__title-img"></div>
+                    <h2>рекомендуем</h2>
+                    <div class="section__title-img"></div>
+                </div>
+                <div uk-slider>
+                    <div class="uk-position-relative">
+                        <div class="uk-slider-container product-slider uk-light">
+                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">
+                                <li>
+                                    <div class="product-slider-item sale">
+                                        <div class="product-slider__inner">
+                                            <div class="product-slider__name-img">
+                                                <a href="#">
+                                        <span class="img">
+                                            <img src="img/jpg/card-slide-item-1.jpg" alt="">
+                                        </span>
+                                                    <span class="name">
+                                            мумие<br>алтайское ценное «Алтэя»
+                                        </span>
+                                                </a>
+                                            </div>
+                                            <div class="product-slider__weight">
+                                                Объём: 80г
+                                            </div>
+                                            <div class="product-slider__price">
+                                                <div class="price-box">
+                                                    <div class="price-box__status">150 р.</div>
+                                                    <div class="price-box__price">150 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-slider-item">
+                                        <div class="product-slider__inner">
+                                            <div class="product-slider__name-img">
+                                                <a href="#">
+                                        <span class="img">
+                                            <img src="img/jpg/card-slide-item-1.jpg" alt="">
+                                        </span>
+                                                    <span class="name">
+                                            мумие<br>алтайское ценное «Алтэя»
+                                        </span>
+                                                </a>
+                                            </div>
+                                            <div class="product-slider__weight">
+                                                Объём: 80г
+                                            </div>
+                                            <div class="product-slider__price">
+                                                <div class="price-box">
+                                                    <div class="price-box__status">150 р.</div>
+                                                    <div class="price-box__price">150 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-slider-item sale">
+                                        <div class="product-slider__inner">
+                                            <div class="product-slider__name-img">
+                                                <a href="#">
+                                        <span class="img">
+                                            <img src="img/jpg/card-slide-item-1.jpg" alt="">
+                                        </span>
+                                                    <span class="name">
+                                            мумие<br>алтайское ценное «Алтэя»
+                                        </span>
+                                                </a>
+                                            </div>
+                                            <div class="product-slider__weight">
+                                                Объём: 80г
+                                            </div>
+                                            <div class="product-slider__price">
+                                                <div class="price-box">
+                                                    <div class="price-box__status">150 р.</div>
+                                                    <div class="price-box__price">150 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-slider-item">
+                                        <div class="product-slider__inner">
+                                            <div class="product-slider__name-img">
+                                                <a href="#">
+                                        <span class="img">
+                                            <img src="img/jpg/card-slide-item-1.jpg" alt="">
+                                        </span>
+                                                    <span class="name">
+                                            мумие<br>алтайское ценное «Алтэя»
+                                        </span>
+                                                </a>
+                                            </div>
+                                            <div class="product-slider__weight">
+                                                Объём: 80г
+                                            </div>
+                                            <div class="product-slider__price">
+                                                <div class="price-box">
+                                                    <div class="price-box__status">150 р.</div>
+                                                    <div class="price-box__price">150 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-slider-item sale">
+                                        <div class="product-slider__inner">
+                                            <div class="product-slider__name-img">
+                                                <a href="#">
+                                        <span class="img">
+                                            <img src="img/jpg/card-slide-item-1.jpg" alt="">
+                                        </span>
+                                                    <span class="name">
+                                            мумие<br>алтайское ценное «Алтэя»
+                                        </span>
+                                                </a>
+                                            </div>
+                                            <div class="product-slider__weight">
+                                                Объём: 80г
+                                            </div>
+                                            <div class="product-slider__price">
+                                                <div class="price-box">
+                                                    <div class="price-box__status">150 р.</div>
+                                                    <div class="price-box__price">150 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-slider-item">
+                                        <div class="product-slider__inner">
+                                            <div class="product-slider__name-img">
+                                                <a href="#">
+                                        <span class="img">
+                                            <img src="img/jpg/card-slide-item-1.jpg" alt="">
+                                        </span>
+                                                    <span class="name">
+                                            мумие<br>алтайское ценное «Алтэя»
+                                        </span>
+                                                </a>
+                                            </div>
+                                            <div class="product-slider__weight">
+                                                Объём: 80г
+                                            </div>
+                                            <div class="product-slider__price">
+                                                <div class="price-box">
+                                                    <div class="price-box__status">150 р.</div>
+                                                    <div class="price-box__price">150 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="uk-arrow-block-lg">
+                            <a class="uk-position-center-left-out uk-position-small product-slider-arrow product-slider-arrow-prev" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right-out uk-position-small product-slider-arrow product-slider-arrow-next" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+                        <div class="uk-arrow-block-mb">
+                            <a class="uk-position-center-left product-slider-arrow product-slider-arrow-prev uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right product-slider-arrow product-slider-arrow-next uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__banner">
+        <div class="container">
+            БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА (<a href="tel:88002000950">8 800 2000 950</a>) С 4:00 ДО 8:00 И С 10:00 ДО 13:00 (ВРЕМЯ — МОСКОВСКОЕ)
+        </div>
+    </div>
+    <div class="footer__faq">
+        <div class="container">
+            <div class="footer__faq__items">
+                <div class="footer__faq__item">
+                    <div class="footer__faq__inner">
+                        <ul class="footer__faq-list">
+                            <li class="footer__faq-title">Каталог товаров</li>
+                            <li><a href="">натуральные масла</a></li>
+                            <li><a href="">травяные чаи</a></li>
+                            <li><a href="">продукты с пантогематогеном</a></li>
+                            <li><a href="">продукты с каменным маслом</a></li>
+                            <li><a href="">БАД</a></li>
+                            <li><a href="">каши</a></li>
+                            <li><a href="">подарочные набор</a></li>
+                            <li><a href="">косметика</a></li>
+                        </ul>
+                        <ul class="footer__faq-list">
+                            <li class="footer__faq-title">Компания</li>
+                            <li><a href="">о компании</a></li>
+                            <li><a href="">лицензии и сертификаты</a></li>
+                            <li><a href="">контрактное производство</a></li>
+                            <li><a href="">оптовикам</a></li>
+                            <li><a href="">новости</a></li>
+                            <li><a href="">контакты</a></li>
+                            <li><a href="">блог</a></li>
+                        </ul>
+                        <ul class="footer__faq-list">
+                            <li class="footer__faq-title">Магазин</li>
+                            <li><a href="">акции</a></li>
+                            <li><a href="">доставка и оплата</a></li>
+                            <li><a href="">документация</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__faq__item">
+                    <div class="footer__faq__inner">
+                        <ul class="footer__faq-bank-system">
+                            <li>
+                                <span class="footer__icon-bank">
+                                    <img class="render-img" src="img/icons/png-icons/mir-icon.png" alt="">
+                                </span>
+                            </li>
+                            <li>
+                                <span class="footer__icon-bank">
+                                    <img class="render-img" src="img/icons/png-icons/mastercard-icon.png" alt="">
+                                </span>
+                            </li>
+                            <li>
+                                <span class="footer__icon-bank">
+                                    <img class="render-img" src="img/icons/png-icons/visa-icon.png" alt="">
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="footer__faq-social">
+                            <div class="footer__faq-title">Следите за нашими новостями<br>и акциями в социальных сетях!
+                            </div>
+                            <ul class="footer__faq-social-list">
+                                <li>
+                                    <a href="">
+                                    <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/inst-icon-f.png" alt="">
+                                    </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/vk-icon-f.png" alt="">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/ok-icon-f.png" alt="">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/facebook-icon-f.png"
+                                                 alt="">
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="footer__icon-social">
+                                            <img class="render-img" src="img/icons/png-icons/youtube-icon-f.png" alt="">
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__bottom__items">
+                <div class="footer__bottom__item">
+                    <div class="footer__bottom__inner">
+                        <form action="" class="subscribe-form">
+                            <h2 class="subscribe-form__title">Подписка на новостную рассылку:</h2>
+                            <input type="text" placeholder="введите ваш e-mail">
+                            <button class="subscribe-form__button" type="submit">
+                                <img class="render-img" src="img/icons/png-icons/go-icon.png" alt="">
+                            </button>
+                        </form>
+                        <div class="developer"><a href="#" class="alians">Разработка сайта: АЛЬЯНС+</a></div>
+                    </div>
+                </div>
+                <div class="footer__bottom__item">
+                    <div class="footer__bottom__inner">
+                        <ul class="footer__bottom-list">
+                            <li class="footer__bottom-list-title">ООО «АЛТЭЯ»</li>
+                            <li><a href="">Адрес: 659322, Россия,<br>Алтайский край, г. Бийск,<br>Ул. Социалистическая
+                                д. 11, стр. 1</a></li>
+                        </ul>
+                        <ul class="footer__bottom-list">
+                            <li class="footer__bottom-list-title">Тел./факс</li>
+                            <li><a href="">(3854) 30-30-87</a></li>
+                            <li><a href="">(3854) 30-11-33</a></li>
+                            <li><a href="">E-mail: info@alteya.su</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+<script src="js/fancybox.min.js"></script>
+<script src="js/maskedinput.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+
+</body>
+</html>
